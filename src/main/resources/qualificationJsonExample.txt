@@ -1,0 +1,6 @@
+{
+    "_id" : ObjectId("59ca110f0d8c01e0de29e500"),
+    "qualification_name" : "kazta",
+    "qualification_date" : "26/9/2017",
+    "quadron_relevance" : "bakara"
+}

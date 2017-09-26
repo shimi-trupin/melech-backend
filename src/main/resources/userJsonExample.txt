@@ -1,0 +1,16 @@
+{
+    "_id" : ObjectId("59ca0aeb0d8c01e0de29e41a"),
+    "name" : "Ori Elimelech",
+    "id" : 303456789,
+    "mail" : "ori.eli@gmail.com",
+    "birth_date" : "27/8/1997",
+    "adress" : "sdcs, Lod",
+    "status" : "work",
+    "user_type" : "bakar",
+    "squadron" : "bakara",
+    "phone_num" : 36545829,
+    "cell_num" : 547865987,
+    "work_num" : 3030323,
+    "course_num" : 102,
+    "hazah_job" : "bne brak"
+}
