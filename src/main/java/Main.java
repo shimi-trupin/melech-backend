@@ -5,7 +5,6 @@
 import static spark.Spark.*;
 
 import com.google.gson.*;
-import database.DatabaseHandler;
 import models.Users;
 import services.UsersService;
 
@@ -16,10 +15,6 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         get("/hello", (req, res) -> "Hello World");
-
-        DatabaseHandler databaseHandler = new DatabaseHandler();
-        databaseHandler.initialize();
-        databaseHandler.getAllDocuments();
 
         Gson gson = new Gson();
         post("/add-user", (req, res) -> {
