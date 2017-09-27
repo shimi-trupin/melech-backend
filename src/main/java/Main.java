@@ -27,5 +27,10 @@ public class Main {
             res.type("application/json");
             return usersService.getAllUsers();
         }, gson ::toJson);
+
+        get("/all/schedules", (req, res) -> {
+            res.type("application/json");
+            return usersService.getAllUsers();
+        }, gson ::toJson);
     }
 }
