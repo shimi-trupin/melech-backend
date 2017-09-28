@@ -4,6 +4,7 @@ import models.Activities;
 import models.Stations;
 import services.*;
 
+import java.util.Collections;
 import java.util.List;
 
 public class SchedulingAlgorithm {
@@ -14,17 +15,17 @@ public class SchedulingAlgorithm {
     public static ActivitiesService activitiesService = new ActivitiesService();
     public static StationsService stationsService = new StationsService();
 
-    List<Activities> activities = activitiesService .getAllActivities();
-    List<Stations> stations = stationsService .getAllStations();
+    public static List<Activities> activities = activitiesService .getAllActivities();
+    public  static List<Stations> stations = stationsService .getAllStations();
 
-    /*for (Activities activity : activities) {
-        int availablePeople = stations.size();
-        int availablePeopleStation = 0
+    public SchedulingAlgorithm() {
+    }
 
-        for (Stations station: stations) {
+    public void run(){
+        /*activities.forEach(activity -> {
 
-        }
-    }*/
+        });*/
 
-
+        Collections.sort(activities, );
+    }
 }
