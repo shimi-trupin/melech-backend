@@ -5,6 +5,7 @@
 import static spark.Spark.*;
 
 import com.google.gson.*;
+import db.DatabaseHandler;
 import models.Qualifications;
 import models.Users;
 import models.Schedules;
@@ -81,5 +82,9 @@ public class Main {
             res.type("application/json");
             return stationsService .getAllStations();
         }, gson ::toJson);
+
+        DatabaseHandler databaseHandler = new DatabaseHandler();
+                databaseHandler.initialize();
+                databaseHandler.getUserSchedules();
     }
 }
