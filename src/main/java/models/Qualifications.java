@@ -10,6 +10,7 @@ public class Qualifications {
     @Id
     private ObjectId _id;
     private String qualification_name;
-    private String qualification_date;
+    private String qualification_start_time;
+    private String qualification_end_time;
     private String quadron_relevance;
 }

@@ -5,15 +5,12 @@
 import static spark.Spark.*;
 
 import com.google.gson.*;
-import models.Qualifications;
 import models.Users;
-import services.QualificationsService;
 import services.UsersService;
 
 public class Main {
 
     public static UsersService usersService = new UsersService();
-    public static QualificationsService qualificationsService = new QualificationsService();
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
@@ -29,17 +26,6 @@ public class Main {
         get("/all/users", (req, res) -> {
             res.type("application/json");
             return usersService.getAllUsers();
-        }, gson ::toJson);
-
-        post("/add-qualification", (req, res) -> {
-            res.type("application/json");
-            Qualifications qualifications = gson.fromJson(req.body(), Qualifications.class);
-            return qualificationsService .addQualification(qualifications);
-        }, gson ::toJson);
-
-        get("/all/qualifications", (req, res) -> {
-            res.type("application/json");
-            return qualificationsService .getAllQualifications();
         }, gson ::toJson);
     }
 }
