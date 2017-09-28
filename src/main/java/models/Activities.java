@@ -11,6 +11,6 @@ public class Activities {
     private ObjectId _id;
     private String activity_name;
     private String activity_type;
-    private float startTime;
-    private float endTime;
+    private String startTime;
+    private String endTime;
 }

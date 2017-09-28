@@ -12,7 +12,7 @@ public class Schedules {
   private String schedule_name;
   private String schedule_type;
   private int userId;
-  private float startTime;
-  private float endTime;
+  private String startTime;
+  private String endTime;
 
 }

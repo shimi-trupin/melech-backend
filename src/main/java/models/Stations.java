@@ -10,6 +10,6 @@ public class Stations {
     private String station_name;
     private String qualification_name;
     private String user_type;
-    private float startTime;
-    private float endTime;
+    private String startTime;
+    private String endTime;
 }

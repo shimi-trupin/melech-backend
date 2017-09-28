@@ -9,7 +9,7 @@ import java.util.List;
 
 public class SchedulesService {
 
-    String host = "localhost";
+    String host = "192.168.0.67"; //Uriel's ip
     int port = 27017;
     String dbName = "melechdb";
 
